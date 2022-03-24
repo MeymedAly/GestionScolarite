@@ -1,0 +1,23 @@
+nav{
+    height: 55px;
+}
+a{
+    width: 200px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+li a {
+    display: block ;
+    
+    color: #fff ;
+    font: 1em "Trebuchet MS",Arial,sans-serif ;
+    line-height: 1em ;
+    text-align: center ;
+    text-decoration: none ;
+    padding: 4px 0 ;
+  }
+  a:hover {
+    background-color: #8c8d8a;
+    display: block;
+}

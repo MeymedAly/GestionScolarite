@@ -1,0 +1,27 @@
+<br>
+<div class="p-3 border bg-secondary" id="d">
+	 <h4 align="center">Ajouter Etudiant</h4>
+  <form [formGroup]= "form" name="form" (ngSubmit) = "submit()" >
+ 			 <div class="mb-3">
+			  <label for="exampleFormControlInput1" class="form-label">Nom </label>
+			  <input type="text" class="form-control"  name="nom"  formControlName="nom" >
+			</div>
+			 <div class="mb-3">
+			  <label for="exampleFormControlInput1" class="form-label">Matricule</label>
+			  <input type="text" class="form-control"  name="Matricule"  formControlName="Matricule" >
+			</div>
+            <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Classe</label>
+            <input type="text" class="form-control"  name="Classe"  formControlName="Classe" >
+            </div>
+			<div class="mb-3">
+			  <p><button type="reset" class="btn btn-primary">Annuler</button>
+              <button type="submit" class="btn" style="background:#52be80;">Ajouter</button></p>
+			  
+			  
+			</div>
+			</form>
+			</div>
+
+
+			

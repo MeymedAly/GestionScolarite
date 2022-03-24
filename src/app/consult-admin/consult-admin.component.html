@@ -1,0 +1,49 @@
+
+
+	<div class="col" id="d">
+      <div class="p-3 border bg-secondary"><h3 align="center">Liste des etudiant</h3>
+          
+          <table class="table">
+			  <thead>
+			    <tr>
+				  <th scope="col">Classe</th>
+			      <th scope="col">Matricule</th>			      
+				  <th scope="col">Note Math</th>
+				  <th scope="col">Note physique</th>
+				  <th scope="col">Note Science</th>
+				  <th scope="col">Note Arabe</th>
+				  <th scope="col">Note francais</th>
+				  <th scope="col">Note Anglais</th>
+				  <th scope="col">Moyenne</th>
+				  <th scope="col"></th>
+                  <th scope="col"></th>
+			    </tr>
+			  </thead>
+			  <tbody>
+			   
+			    <tr *ngFor="let gr of listResultat">
+			      <td>{{gr.classe}}</td>
+				  <td>{{gr.Matricule}}</td>
+				  <td>{{gr.Math}}</td>
+				  <td>{{gr.pc}}</td>
+				  <td>{{gr.sn}}</td>
+				  <td>{{gr.ar}}</td>
+				  <td>{{gr.fr}}</td>
+				  <td>{{gr.an}}</td>
+				  <td>{{gr.moy}}</td>
+				  <td class="actions">
+				  <button class="btn btn-success"  >	<i class="fas fa-edit" [routerLink]="['/updateResultat', gr.ID]" >Modifier</i> </button>	  
+				  </td>
+				  <td>
+				  <button class="btn btn-danger"> <i class="fas fa-edit" (click)="SuppResultat(gr)" >supprimer</i> </button>
+				  </td>	
+			      
+			    </tr>
+			   
+			  </tbody>
+			</table>
+		 	
+      </div>
+    </div>
+
+			

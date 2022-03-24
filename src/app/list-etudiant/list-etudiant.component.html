@@ -1,0 +1,49 @@
+<div class="col" id="d">
+      <div class="p-3 border bg-light"><h3 align="center"></h3>
+          Nom:{{listEtudiant.nom}}<br>
+		  Classe:{{listEtudiant.classe}}<br>
+		  Matricule:{{listEtudiant.Matricule}}<br>
+          <table class="table">
+			
+			    <tr>
+			      <th scope="col">Matiere</th>
+			      <th scope="col">cofficient</th>
+				  <th scope="col">Note</th>
+
+			    </tr>
+			   
+			    <tr>
+			      <td>Mathematique</td>
+				  <td>6</td>
+			      <td>{{listEtudiant.Math}}</td> 
+			    </tr>
+			    <tr>
+					<td>Physique</td>
+					<td>5</td>
+					<td>{{listEtudiant.pc}}</td> 
+				</tr>	
+				<tr>
+					<td>Science</td>
+					<td>4</td>
+					<td>{{listEtudiant.sn}}</td> 
+				</tr>
+				<tr>
+					<td>Arabe</td>
+					<td>2</td>
+					<td>{{listEtudiant.ar}}</td> 
+				</tr>	
+				<tr>
+					<td>Francais</td>
+					<td>2</td>
+					<td>{{listEtudiant.fr}}</td> 
+				</tr>	   
+				<tr>
+					<td>Anglais</td>
+					<td>2</td>
+					<td>{{listEtudiant.an}}</td> 
+				</tr>
+			 
+			</table>
+		 	Moyenne : {{listEtudiant.moy}}
+      </div>
+    </div>

@@ -1,0 +1,21 @@
+
+<br>
+<div class="p-3 border bg-secondary" id="d">
+	 <h4 align="center"> Entre votre classe & matricule pour consulter votre resultar </h4>
+  <form [formGroup]= "form" name="form" (ngSubmit) = "consultetudiant()" >
+             <div class="mb-3">
+			  <label for="exampleFormControlInput1" class="form-label"><b>Matricule</b></label>
+			  <input type="text" class="form-control" id="exampleFormControlInput1" name="Matricule" formControlName="Matricule">
+			</div>
+             <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label"><b>Classe</b></label>
+            <input type="text" class="form-control" id="exampleFormControlInput1" name="Classe" formControlName="Classe">
+			</div>
+ 			
+			<div class="mb-3">
+			  <p><button type="reset" class="btn btn-primary"><b>Annuler</b></button>
+              <button type="submit" class="btn" style="background:#52be80;"><b>Consulter</b></button></p>
+			  
+			</div>
+            <br/>
+			

@@ -1,0 +1,53 @@
+<div class="col order-1 bg-secondary" id="d">
+      <h3 align="center"><b>Resultats</b></h3><br>
+      <form [formGroup]= "form" name="form" (ngSubmit) = "update()">
+      <div class="row" id="b">
+        <div class="col">   
+            <input type="text" class="form-control" placeholder="Classe" aria-label="First name" name="classe" formControlName="classe">
+        </div>
+        <div class="col">
+            <input type="text" class="form-control" placeholder="Matricule" aria-label="Last name" name="Matricule" formControlName="Matricule">
+        </div>
+       </div>
+<br>
+       <div class="row" id="b">
+        <div class="col">
+            
+            <input type="text" class="form-control" placeholder="Note Math" aria-label="First name" name="Math" formControlName="Math">
+        </div>
+        <div class="col">
+            <input type="text" class="form-control" placeholder="Note physique" aria-label="Last name" name="pc" formControlName="pc">
+        </div>
+       </div>
+
+       <br>
+       <div class="row" id="b">
+        <div class="col">
+            
+            <input type="text" class="form-control" placeholder="Note SN" aria-label="First name" name="sn" formControlName="sn">
+        </div>
+        <div class="col">
+            <input type="text" class="form-control" placeholder="Note Arabe" aria-label="Last name" name="ar" formControlName="ar">
+        </div>
+       </div>
+
+       <br>
+       <div class="row" id="b">
+        <div class="col">
+            
+            <input type="text" class="form-control" placeholder="Note francais" aria-label="First name" name="fr" formControlName="fr">
+        </div>
+        <div class="col">
+            <input type="text" class="form-control" placeholder="Note Anglais" aria-label="Last name" name="an" formControlName="an">
+        </div>
+       </div>
+       <br>
+       <div class="col" align="center">
+            <button class="btn btn-primary">Ajouter</button>
+        </div>
+		<br>
+      </form>  
+
+    </div>
+			
+
