@@ -1,7 +1,7 @@
 
 
 	<div class="col" id="d">
-      <!--<div class="p-3 border bg-secondary">--><h3 align="center">Liste des etudiant</h3>
+      <div class="p-2 border"><h3 align="center">Liste des etudiant</h3>
           
           <table class="table">
 			  <thead>
@@ -9,7 +9,6 @@
 			      <th scope="col">Matricule</th>
 			      <th scope="col">Nom</th>
 				  <th scope="col">Classe</th>
-				  <th scope="col"></th>
 				  <th scope="col"></th>
 
 			    </tr>
@@ -21,11 +20,9 @@
 			      <td>{{gr.nom}}</td>
 			      <td>{{gr.Matricule}}</td>
 				  <td>{{gr.classe}}</td>
-				  <td class="actions">
+				  <td class="actions" align="center">
 				  <button class="btn btn-success" [routerLink]="['/updateEtudiant', gr.ID]" >	<i class="fas fa-edit" >Modifier</i> </button>
 				  <button class="btn btn-danger" (click)="SuppEtudiant(gr)">	<i class="fas fa-edit" >supprimer</i> </button>	  
-				  </td>
-				  <td>
 				  <button class="btn btn-success" [routerLink]="['/ConsulterResult', gr.ID]" >	<i class="fas fa-edit" >Ajoutr note</i> </button>
 				  </td>	
 			      
@@ -34,7 +31,7 @@
 			  </tbody>
 			</table>
 		 	
-      <!--</div>-->
+      </div>
     </div>
 
 			
