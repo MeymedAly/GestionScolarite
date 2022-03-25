@@ -10,6 +10,7 @@ import { Etudiant } from '../Model/Etudiant';
   styleUrls: ['./etudiant.component.css']
 })
 export class EtudiantComponent implements OnInit {
+ // Link='assets/sco.jpeg'
   etudiant : Etudiant = {ID : 0 ,nom:'', Matricule:'', Classe : ''};
   form = this.formbl.group({
     Matricule:[], Classe:[]});
