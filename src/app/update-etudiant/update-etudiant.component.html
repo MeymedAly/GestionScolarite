@@ -1,4 +1,4 @@
-<div class="p-3 border bg-secondary" id="d">
+<div class="p-3 border bg-light" id="d">
 	 <h4 align="center">Modifier Etudiant</h4>
   <form [formGroup]= "form" name="form" (ngSubmit) = "update()" >
  			 <div class="mb-3">
@@ -15,7 +15,7 @@
             </div>
 			<div class="mb-3">
 			  
-              <button type="submit" class="btn" style="background:#52be80;">Modifier</button>
+              <button type="submit" class="btn" (click)="addEtu()" style="background:#52be80;">Modifier</button>
 			  
 			  
 			</div>

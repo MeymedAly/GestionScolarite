@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder } from '@angular/forms';
 import { Router } from '@angular/router';
+import Swal from 'sweetalert2';
 import { AuthService } from '../auth.service';
 import { Resultat } from '../Model/Resultat';
 
@@ -32,5 +33,8 @@ export class AjoutResultatComponent implements OnInit {
   //   this.resultat.an = this.form.get(['nom'])!.value;
   //   this.auth.AjoutResultat(this.resultat);
   //  }
+  addEtu(){
+   Swal.fire("Bravoo",'Les donnes sont modifier','success')
+  }
 
 }

@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, NgForm } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
+import Swal from 'sweetalert2';
 import { AuthService } from '../auth.service';
 import { EtudiantComponent } from '../etudiant/etudiant.component';
 import { Etudiant } from '../Model/Etudiant';
@@ -77,13 +78,34 @@ export class AjoutEtudiantComponent implements OnInit {
     console.log(etudiant);
     
   }
+ sup(){
 
-  SuppEtudiant(etudiant :Etudiant) : void{
-    this.auth.deleteEtudiant(etudiant.ID).subscribe(data => {
-      window.location.reload();
-      //this.classe = this.classe.filter(u => u !== classe);
-    });
-  }
+  Swal.fire({
+    title: 'Voulez-vous vraiment supprimer ?',
+    text: 'Vous ne pourrez pas récupérer ce fichier !',
+    icon: 'warning',
+    showCancelButton: true,
+    confirmButtonText: 'Oui, supprimez-le !',
+    cancelButtonText: 'Non, gardez-le',
+  }).then((result) => {
+    if (result.value) {
+      Swal.fire(
+        'Supprimé !',
+        'Votre fichier imaginaire a été supprimé.',
+        'success'
+      );
+    } else if (result.dismiss === Swal.DismissReason.cancel) {
+      Swal.fire('Annulé', 'Votre fichier imaginaire est en sécurité :', 'error');
+    }
+  });
+ }
+  
+  // SuppEtudiant(etudiant :Etudiant) : void{
+  //   this.auth.deleteEtudiant(etudiant.ID).subscribe(data => {
+  //     window.location.reload();
+  //     //this.classe = this.classe.filter(u => u !== classe);
+  //   });
+  // }
 
   cons(){
     this.auth.consult();
@@ -94,6 +116,13 @@ export class AjoutEtudiantComponent implements OnInit {
     this.router.navigate(['ConsulterResult/' + this.id]);
     console.log(etudiant);
     
+  
+  }
+  addEtu(){
+    Swal.fire("Bravoo",'Les donnes sont enregistrer','success')
+  }
+  modiEtu(){
+    Swal.fire("Bravoo",'Les donnes sont modifier','success')
   }
 
 }

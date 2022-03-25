@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
+import Swal from 'sweetalert2';
 import { AuthService } from '../auth.service';
 import { Calsse } from '../Model/Classe';
 
@@ -37,6 +38,10 @@ export class UpdateClasseComponent implements OnInit {
       //window.location.reload();
     })
     console.log("update");
+  }
+
+  addEtu(){
+     Swal.fire("Bravoo",'Les donnes sont Modifier','success')
   }
 
 }

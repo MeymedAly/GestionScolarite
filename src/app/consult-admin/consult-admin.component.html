@@ -1,7 +1,7 @@
 
 
 	<div class="col" id="d">
-      <div class="p-3 border bg-secondary"><h3 align="center">Liste des etudiant</h3>
+      <div class="p-3 border bg-light"><h3 align="center">Liste des etudiant</h3>
           
           <table class="table">
 			  <thead>
@@ -32,7 +32,7 @@
 				  <td>{{gr.an}}</td>
 				  <td>{{gr.moy}}</td>
 				  <td class="actions">
-				  <button class="btn btn-success"  >	<i class="fas fa-edit" [routerLink]="['/updateResultat', gr.ID]" >Modifier</i> </button>	  
+				  <button class="btn btn-success" (click)="addEtu()" >	<i class="fas fa-edit" [routerLink]="['/updateResultat', gr.ID]" >Modifier</i> </button>	  
 				  </td>
 				  <td>
 				  <button class="btn btn-danger"> <i class="fas fa-edit" (click)="SuppResultat(gr)" >supprimer</i> </button>

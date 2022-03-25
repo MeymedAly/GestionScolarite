@@ -1,4 +1,4 @@
-<div class="col order-1 bg-secondary" id="d">
+<div class="col order-1 bg-light" id="d">
       <h3 align="center"><b>Resultats</b></h3><br>
       <form [formGroup]= "form" name="form" (ngSubmit) = "update()">
       <div class="row" id="b">
@@ -43,7 +43,7 @@
        </div>
        <br>
        <div class="col" align="center">
-            <button class="btn btn-primary">Ajouter</button>
+            <button class="btn btn-primary" (click)="addEtu()">Ajouter</button>
         </div>
 		<br>
       </form>  

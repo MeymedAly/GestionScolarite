@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, Validators } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
+import Swal from 'sweetalert2';
 import { AuthService } from '../auth.service';
 import { Resultat } from '../Model/Resultat';
 
@@ -48,6 +49,9 @@ export class UpdateResultatComponent implements OnInit {
       //window.location.reload();
     })
     console.log("update");
+  }
+  addEtu(){
+    Swal.fire("Bravoo",'Les donnes sont enregistre','success')
   }
 
 }

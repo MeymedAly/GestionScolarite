@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
+import Swal from 'sweetalert2';
 import { AuthService } from '../auth.service';
 import { Resultat } from '../Model/Resultat';
 
@@ -55,6 +56,10 @@ export class ConsultAdminComponent implements OnInit {
     this.router.navigate(['updateResultat/' + this.id]);
     console.log(resultat);
     
+  }
+
+  addEtu(){
+    Swal.fire("Bravoo",'Les donnes sont modifier','success')
   }
 
 

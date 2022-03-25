@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
+import Swal from 'sweetalert2';
 import { AuthService } from '../auth.service';
 import { Calsse } from '../Model/Classe';
 import { Etudiant } from '../Model/Etudiant';
@@ -17,6 +18,10 @@ export class AjoutClasseComponent implements OnInit {
   Matricule:[], Classe:[]});
   id : any;    
 
+
+  addEtu(){
+    Swal.fire("Bravoo",'Les donnes sont enregistre','success')
+  }
   constructor(protected auten : AuthService, private formbl : FormBuilder, private router : Router) {
     
    }

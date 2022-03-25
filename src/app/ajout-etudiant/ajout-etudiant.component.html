@@ -21,9 +21,9 @@
 			      <td>{{gr.Matricule}}</td>
 				  <td>{{gr.classe}}</td>
 				  <td class="actions" align="center">
-				  <button class="btn btn-success" [routerLink]="['/updateEtudiant', gr.ID]" >	<i class="fas fa-edit" >Modifier</i> </button>
-				  <button class="btn btn-danger" (click)="SuppEtudiant(gr)">	<i class="fas fa-edit" >supprimer</i> </button>	  
-				  <button class="btn btn-success" [routerLink]="['/ConsulterResult', gr.ID]" >	<i class="fas fa-edit" >Ajoutr note</i> </button>
+				  <button  class="btn btn-success"  [routerLink]="['/updateEtudiant', gr.ID]" >	<i class="fas fa-edit" >Modifier</i> </button>
+				  <button class="btn btn-danger" (click)="sup()">	<i class="fas fa-edit" >supprimer</i> </button>	  
+				  <button class="btn btn-success"  [routerLink]="['/ConsulterResult', gr.ID]" >	<i class="fas fa-edit" >Ajoutr note</i> </button>
 				  </td>	
 			      
 			    </tr>
